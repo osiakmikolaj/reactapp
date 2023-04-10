@@ -6,5 +6,31 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.7rem;
+  font-size: 4rem;
+}
+
+.name {
+  animation: name-spin 10s infinite linear;
+}
+
+.logo {
+  animation: logo-spin 10s infinite linear;
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes name-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
