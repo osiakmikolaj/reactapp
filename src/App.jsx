@@ -1,13 +1,15 @@
-import "./App.css";
-import logo from "./logo192.png";
+import "./styles/App.css";
+import Button from "./components/button";
 
 export default function App() {
-  return (
-    <div className="App">
-      <div className="name">
-        <img className="logo" src={logo} alt="logo" height={50} /> Mikołaj{" "}
-        <img className="logo" src={logo} alt="logo" height={50} />
-      </div>
-    </div>
-  );
+    return (
+        <div className="app">
+            <div className="header">Mikołaj Osiak</div>
+            <div className="btns">
+                <Button />
+                <Button />
+                <Button />
+            </div>
+        </div>
+    );
 }
